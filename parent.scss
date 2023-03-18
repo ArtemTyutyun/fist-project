@@ -1,0 +1,436 @@
+@mixin margin($margin-top, $margin-right, $margin-bottom, $margin-left) {
+    margin-top: $margin-top;
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;
+}
+
+@mixin font($font-family, $font-style, $font-weight, $font-size) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin helps-me() {
+    width: 74px;
+    height: 27px;
+    @include margin(21px, 53px, 22px, 53px);
+    @include font("Poppins", normal, 700, 18px);
+    line-height: 27px;
+    text-align: center;
+}
+
+@mixin buttons() {
+    width: 180px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+@mixin headlines() {
+    height: 96px;
+    @include font("Poppins", normal, 800, 64px);
+    line-height: 96px;
+    text-align: center;
+    color: #828282;
+}
+
+@mixin responses() {
+    box-sizing: border-box;
+    width: 577px;
+    height: 233px;
+    background: #ffffff;
+    border: 1px solid #6cb981;
+    border-radius: 40px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.all {
+    width: 1903px;
+    height: 4102px;
+    background: #ffffff;
+}
+
+.head {
+    width: 1903px;
+    height: 840px;
+    background: linear-gradient(180deg, rgba(18, 54, 22, 0.6) 0%, rgba(39, 123, 47, 0) 100%), url(5443.jpg);
+    background-image: url(./png/grass-1.jpg);
+
+    .head-h {
+        width: 366px;
+        height: 96px;
+        @include margin(0px, 719px, 50px, 818px);
+        @include font("Poppins", normal, 800, 60px);
+        display: flex;
+        align-items: center;
+        line-height: 118.5%;
+        color: #ffffff;
+    }
+
+    .Rock {
+        margin-top: 58px;
+        @include font("Poppins", normal, 800, 60px);
+    }
+
+    .Yard {
+        margin-top: -20px;
+        @include font("Poppins", normal, 800, 40px);
+    }
+
+    .simple {
+        width: 279px;
+        height: 27px;
+        @include margin(19px, 48px, 18px, 47px);
+        @include font("Poppins", normal, 500, 18px);
+        line-height: 27px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .simple-2 {
+        width: 374px;
+        height: 64px;
+        margin: {
+            left: 764px;
+            right: 765px;
+            top: 50px;
+        }
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 59px;
+    }
+
+    .Lorem {
+        width: 983px;
+        height: 269px;
+        @include margin(17px, 460px, 100px, 460px);
+        @include font("Poppins", normal, 900, 144px);
+        line-height: 134px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .button {
+        @include margin(100px, 861px, 116px, 862px);
+        background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #f9f9f9 100%);
+        box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
+        @include buttons();
+    }
+
+    .Help-me {
+        @include helps-me();
+        color: #48924f;
+    }
+}
+
+.in-body {
+    width: 1903px;
+    height: 1056px;
+    background: #ffffff;
+
+    .Services {
+        width: 284px;
+        @include margin(70px, 809px, 0px, 810px);
+        @include headlines();
+    }
+
+    .Services-2 {
+        display: flex;
+    }
+
+    .grass,
+    .flowers,
+    .lawn-mower {
+        width: 385px;
+        height: 290px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .strong {
+        width: 325px;
+        height: 24px;
+        @include font("Poppins", normal, 900, 16px);
+        line-height: 24px;
+        color: #0d4d14;
+    }
+
+    .text {
+        width: 325px;
+        height: 120px;
+        @include margin(30px, 30px, 30px, 30px);
+        @include font("Poppins", normal, 400, 14px);
+        line-height: 20px;
+        color: #0d4d14;
+    }
+
+    @mixin services() {
+        width: 385px;
+        height: 504px;
+        background: #ffffff;
+        box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
+        border-radius: 30px;
+    }
+
+    .Service {
+        @include margin(50px, 22px, 50px, 352px);
+        @include services();
+    }
+
+    .Service-1 {
+        @include margin(50px, 0px, 50px, 0px);
+        @include services();
+    }
+
+    .Service-2 {
+        @include margin(50px, 352px, 50px, 22px);
+        @include services();
+    }
+
+    .Help-me-1 {
+        @include helps-me();
+        color: #6cb981;
+    }
+
+    .button-1 {
+        @include buttons();
+        @include margin(0px, 861px, 70px, 862px);
+        background: #ffffff;
+        box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+    }
+
+    .About-us {
+        width: 298px;
+        @include margin(0px, 802px, 50px, 803px);
+        @include headlines();
+    }
+
+    .Information {
+        width: 1903px;
+        height: 732px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1098.jpg);
+        box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25);
+        background-image: url(./png/grass-3.jpg);
+    }
+
+    .Information-2 {
+        display: flex;
+    }
+
+    @mixin Info() {
+        width: 360px;
+        height: 408px;
+        @include font("Poppins", normal, 600, 18px);
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .Info-about-us {
+        @include Info();
+        @include margin(154px, 60px, 50px, 352px);
+    }
+
+    .Info-about-us-2 {
+        @include Info();
+        @include margin(154px, 0px, 50px, 0px);
+    }
+
+    .Info-about-us-3 {
+        @include Info();
+        @include margin(154px, 352px, 50px, 59px);
+    }
+
+    .button-2 {
+        @include buttons();
+        @include margin(0px, 861px, 50px, 862px);
+        background: #ffffff;
+        box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+    }
+
+    .Help-me-2 {
+        @include helps-me();
+        color: #6cb981;
+    }
+
+    .Testymonial {
+        width: 456px;
+        @include margin(70px, 723px, 70px, 724px);
+        @include headlines();
+    }
+
+    .Testymonials {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .strong-2 {
+        width: 147px;
+        height: 22px;
+        @include font("Poppins", normal, 700, 18px);
+        line-height: 22px;
+        color: #6cb981;
+    }
+
+    .ubsolute {
+        position:relative 
+    }
+
+    .response-1 {
+        position: absolute;
+        @include responses();
+        @include margin(0px, 45px, 45px, 352px);
+    }
+
+    .phoot {
+        margin-left: 400px;
+    }
+
+    .response-2 {
+        @include responses();
+        @include margin(0px, 352px, 45px, 0px);
+    }
+
+    .response-3 {
+        @include responses();
+        @include margin(0px, 45px, 50px, 352px);
+    }
+
+    .response-4 {
+        @include responses();
+        @include margin(0px, 35px, 50px, 0px);
+    }
+
+    .photo-with-girl {
+        @include margin(30px, 14px, 123px, 30px);
+    }
+
+    .photo-with-girl-2 {
+        border-radius: 50px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .text-2 {
+        width: 423px;
+        height: 110px;
+        @include margin(30px, 30px, 10px, 124px);
+        @include font("Poppins", normal, 400, 14px);
+        line-height: 22px;
+        color: #0d4c14;
+    }
+
+    .stars {
+        @include margin(35px, 339px, 30px, 124px);
+    }
+
+    .star {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        background: #6cb981;
+        clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
+    }
+}
+
+.all-in-foot {
+    width: 1903px;
+    height: 532px;
+    background: #fcfcfc;
+    border-radius: 0px;
+
+    .Contact-Us {
+        width: 364px;
+        @include margin(50px, 769px, 0px, 770px);
+        @include headlines();
+    }
+
+    input {
+        appearance: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .main-form {
+        display: grid;
+        grid-template-columns: 2px 2px 2px 2px;
+    }
+
+    @mixin contact-us() {
+        width: 374px;
+        height: 56px;
+        background: #9fdea9;
+        border-radius: 61px;
+    }
+
+    .gmail {
+        @include contact-us();
+        @include margin(70px, 100px, 14px, 558px);
+        opacity: 0.5;
+    }
+
+    .address,
+    .phone-number {
+        @include contact-us();
+        @include margin(0px, 100px, 14px, 558px);
+    }
+
+    .button-4 {
+        width: 168px;
+        height: 56px;
+        border: 3px solid #4db96b;
+        border-radius: 61px;
+        @include margin(0px, 1074px, 50px, 661px);
+    }
+
+    .ul {
+        width: 314px;
+        height: 132px;
+        @include margin(100px, 557px, 154px, 1032px)
+    }
+
+    @mixin uls() {
+        list-style: none;
+        height: 17px;
+        @include font('TT Hoves', normal, 500, 14px);
+        line-height: 17px;
+        color: #333333;
+    }
+
+    .ul-group-1 {
+        width: 314px;
+        height: 24px; 
+        background: url(./png/form-1.png) no-repeat center right 18em;
+    }
+
+    .ul-1 {
+        width: 103px;
+        @include uls();
+        margin-left: 30px;
+    }
+
+    .ul-2 {
+        width: 100px; 
+        @include uls();
+       
+    }
+
+    .ul-3 {
+        width: 270px;
+        @include uls();
+        
+    }
+
+    .foot {
+        width: 1903px;
+height: 145px;
+background: #324B29;
+border-radius: 0px;
+    }
+}
