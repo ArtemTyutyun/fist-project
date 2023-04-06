@@ -25,6 +25,7 @@
     width: 180px;
     height: 70px;
     border-radius: 35px;
+    border: none;
 }
 
 @mixin headlines() {
@@ -44,6 +45,28 @@
     border-radius: 40px;
 }
 
+@mixin phoots() {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+@mixin star-photo() {
+    position: absolute;
+    width: 114px;
+    height: 18px;
+    z-index: 1;
+}
+
+@mixin icons() {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 1032px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -59,7 +82,14 @@
     width: 1903px;
     height: 840px;
     background: linear-gradient(180deg, rgba(18, 54, 22, 0.6) 0%, rgba(39, 123, 47, 0) 100%), url(5443.jpg);
-    background-image: url(./png/grass-1.jpg);
+    background-image: url(./png/grass-1.png);
+
+    .Lawncare-2 {
+        position: absolute;
+        width: 78px;
+        height: 84px;
+        @include margin(64px, 20px, 75px, 720px);
+    }
 
     .head-h {
         width: 366px;
@@ -73,7 +103,7 @@
     }
 
     .Rock {
-        margin-top: 58px;
+        margin-top: 116px;
         @include font("Poppins", normal, 800, 60px);
     }
 
@@ -102,12 +132,16 @@
         }
         background: rgba(0, 0, 0, 0.5);
         border-radius: 59px;
+        border: none;
     }
 
     .Lorem {
         width: 983px;
         height: 269px;
-        @include margin(17px, 460px, 100px, 460px);
+        margin: {
+            left: 460px;
+            right: 460px;
+        }
         @include font("Poppins", normal, 900, 144px);
         line-height: 134px;
         text-align: center;
@@ -137,6 +171,14 @@
         width: 284px;
         @include margin(70px, 809px, 0px, 810px);
         @include headlines();
+    }
+
+    .piece-2 {
+        position: absolute;
+        width: 108.63px;
+        height: 93.94px;
+        left: 806px;
+        top: 958px;
     }
 
     .Services-2 {
@@ -209,12 +251,21 @@
         @include headlines();
     }
 
+    .piece-1 {
+        position: absolute;
+        width: 108.63px;
+        height: 93.94px;
+        left: 1052px;
+        top: 1797.82px;
+        transform: rotate(-3.6deg);
+    }
+
     .Information {
         width: 1903px;
         height: 732px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(1098.jpg);
         box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.25);
-        background-image: url(./png/grass-3.jpg);
+        background-image: url(./png/grass-3.png);
     }
 
     .Information-2 {
@@ -277,17 +328,13 @@
     }
 
     .ubsolute {
-        position:relative 
+        position: relative;
     }
 
     .response-1 {
         position: absolute;
         @include responses();
         @include margin(0px, 45px, 45px, 352px);
-    }
-
-    .phoot {
-        margin-left: 400px;
     }
 
     .response-2 {
@@ -305,16 +352,6 @@
         @include margin(0px, 35px, 50px, 0px);
     }
 
-    .photo-with-girl {
-        @include margin(30px, 14px, 123px, 30px);
-    }
-
-    .photo-with-girl-2 {
-        border-radius: 50px;
-        width: 80px;
-        height: 80px;
-    }
-
     .text-2 {
         width: 423px;
         height: 110px;
@@ -324,16 +361,52 @@
         color: #0d4c14;
     }
 
-    .stars {
-        @include margin(35px, 339px, 30px, 124px);
+    .phoot {
+        @include phoots();
+        left: 382px;
+        top: 2894px;
     }
 
-    .star {
-        width: 18px;
-        height: 18px;
-        display: inline-block;
-        background: #6cb981;
-        clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
+    .phoot-1 {
+        @include phoots();
+        left: 1004px;
+        top: 2894px;
+    }
+
+    .phoot-2 {
+        @include phoots();
+        left: 382px;
+        top: 3172px;
+    }
+
+    .phoot-3 {
+        @include phoots();
+        left: 1004px;
+        top: 3172px;
+    }
+
+    .star-1 {
+        @include star-photo();
+        left: 124px;
+        top: 185px;
+    }
+
+    .star-2 {
+        @include star-photo();
+        left: 1098px;
+        top: 3049px;
+    }
+
+    .star-3 {
+        @include star-photo();
+        left: 476px;
+        top: 3327px;
+    }
+
+    .star-4 {
+        @include star-photo();
+        left: 1098px;
+        top: 3327px;
     }
 }
 
@@ -367,6 +440,7 @@
         height: 56px;
         background: #9fdea9;
         border-radius: 61px;
+        padding-left: 23px;
     }
 
     .gmail {
@@ -392,45 +466,63 @@
     .ul {
         width: 314px;
         height: 132px;
-        @include margin(100px, 557px, 154px, 1032px)
+        @include margin(100px, 557px, 154px, 1032px);
     }
 
     @mixin uls() {
+        position: absolute;
         list-style: none;
         height: 17px;
-        @include font('TT Hoves', normal, 500, 14px);
+        @include font("TT Hoves", normal, 500, 14px);
         line-height: 17px;
         color: #333333;
     }
 
     .ul-group-1 {
         width: 314px;
-        height: 24px; 
-        background: url(./png/form-1.png) no-repeat center right 18em;
+        height: 24px;
     }
 
     .ul-1 {
+        left: 1076px;
+        top: 3675px;
         width: 103px;
         @include uls();
-        margin-left: 30px;
     }
 
     .ul-2 {
-        width: 100px; 
+        left: 1076px;
+        top: 3729px;
+        width: 100px;
         @include uls();
-       
     }
 
     .ul-3 {
+        left: 1076px;
+        top: 3783px;
         width: 270px;
         @include uls();
-        
+    }
+
+    .icon-1 {
+        @include icons();
+        top: 3671px;
+    }
+
+    .icon-2 {
+        @include icons();
+        top: 3725px;
+    }
+
+    .icon-3 {
+        @include icons();
+        top: 3779px;
     }
 
     .foot {
         width: 1903px;
-height: 145px;
-background: #324B29;
-border-radius: 0px;
+        height: 145px;
+        background: #324b29;
+        border-radius: 0px;
     }
 }
