@@ -102,9 +102,9 @@ thead {
 }
 
 .head-h {
-    width: 366px;
+    width: 100%;
     height: 96px;
-    @include margin(58px, 719px, 50px, 818px);
+    @include margin(0px, 719px, 50px, 818px);
     @include font("Poppins", normal, 800, 60px);
     display: flex;
     align-items: center;
@@ -113,11 +113,16 @@ thead {
 }
 
 .Rock {
+    position: absolute;
+    left: 818px;
+    top: 58px;
     @include font("Poppins", normal, 800, 60px);
 }
 
 .Yard {
-    margin-top: -20px;
+    position: absolute;
+    left: 818px;
+    top: 105px;
     @include font("Poppins", normal, 800, 40px);
 }
 
