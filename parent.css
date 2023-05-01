@@ -54,6 +54,8 @@ thead {
 
 .Rock {
   position: absolute;
+  width: 366px;
+  height: 96px;
   left: 818px;
   top: 58px;
   font-family: "Poppins";
@@ -64,6 +66,8 @@ thead {
 
 .Yard {
   position: absolute;
+  width: 366px;
+  height: 96px;
   left: 818px;
   top: 105px;
   font-family: "Poppins";
@@ -97,6 +101,7 @@ thead {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 59px;
   border: none;
+  cursor: pointer;
 }
 
 .Lorem {
@@ -140,6 +145,7 @@ thead {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
+  cursor: pointer;
   color: #48924f;
 }
 
@@ -250,6 +256,7 @@ thead {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
+  cursor: pointer;
   color: #6cb981;
 }
 .in-body .button-1 {
@@ -367,6 +374,7 @@ thead {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
+  cursor: pointer;
   color: #6cb981;
 }
 .in-body .Testymonial {
@@ -573,6 +581,7 @@ thead {
   background: #9fdea9;
   border-radius: 61px;
   padding-left: 23px;
+  cursor: text;
   margin-top: 70px;
   margin-right: 100px;
   margin-bottom: 14px;
@@ -586,6 +595,7 @@ thead {
   background: #9fdea9;
   border-radius: 61px;
   padding-left: 23px;
+  cursor: text;
   margin-top: 0px;
   margin-right: 100px;
   margin-bottom: 14px;
@@ -600,6 +610,7 @@ thead {
   margin-right: 1074px;
   margin-bottom: 50px;
   margin-left: 661px;
+  cursor: pointer;
 }
 .all-in-foot .ul {
   width: 314px;

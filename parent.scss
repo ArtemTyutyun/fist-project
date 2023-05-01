@@ -19,6 +19,7 @@
     @include font("Poppins", normal, 700, 18px);
     line-height: 27px;
     text-align: center;
+    cursor: pointer;
 }
 
 @mixin buttons() {
@@ -114,15 +115,19 @@ thead {
 
 .Rock {
     position: absolute;
+    width: 366px;
+    height: 96px;
     left: 818px;
     top: 58px;
     @include font("Poppins", normal, 800, 60px);
 }
 
 .Yard {
-    position: absolute;
-    left: 818px;
-    top: 105px;
+position: absolute;
+width: 366px;
+height: 96px;
+left: 818px;
+top: 105px;
     @include font("Poppins", normal, 800, 40px);
 }
 
@@ -147,6 +152,7 @@ thead {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 59px;
     border: none;
+    cursor: pointer;
 }
 
 .Lorem {
@@ -454,6 +460,7 @@ thead {
         background: #9fdea9;
         border-radius: 61px;
         padding-left: 23px;
+        cursor: text
     }
 
     .gmail {
@@ -474,6 +481,7 @@ thead {
         border: 3px solid #4db96b;
         border-radius: 61px;
         @include margin(0px, 1074px, 50px, 661px);
+        cursor: pointer;
     }
 
     .ul {
