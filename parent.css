@@ -104,6 +104,10 @@ thead {
   cursor: pointer;
 }
 
+.simple-2:hover {
+  background-color: #0d4c14;
+}
+
 .Lorem {
   width: 983px;
   height: 269px;
@@ -130,6 +134,11 @@ thead {
   height: 70px;
   border-radius: 35px;
   border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0d4c14;
 }
 
 .Help-me {
@@ -145,7 +154,6 @@ thead {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  cursor: pointer;
   color: #48924f;
 }
 
@@ -256,7 +264,6 @@ thead {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  cursor: pointer;
   color: #6cb981;
 }
 .in-body .button-1 {
@@ -264,12 +271,16 @@ thead {
   height: 70px;
   border-radius: 35px;
   border: none;
+  cursor: pointer;
   margin-top: 0px;
   margin-right: 861px;
   margin-bottom: 70px;
   margin-left: 862px;
   background: #ffffff;
   box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+}
+.in-body .button-1:hover {
+  background: #0d4c14;
 }
 .in-body .About-us {
   width: 298px;
@@ -354,12 +365,16 @@ thead {
   height: 70px;
   border-radius: 35px;
   border: none;
+  cursor: pointer;
   margin-top: 0px;
   margin-right: 861px;
   margin-bottom: 50px;
   margin-left: 862px;
   background: #ffffff;
   box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+}
+.in-body .button-2:hover {
+  background: #0d4c14;
 }
 .in-body .Help-me-2 {
   width: 74px;
@@ -374,7 +389,6 @@ thead {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  cursor: pointer;
   color: #6cb981;
 }
 .in-body .Testymonial {
@@ -611,6 +625,9 @@ thead {
   margin-bottom: 50px;
   margin-left: 661px;
   cursor: pointer;
+}
+.all-in-foot .button-4:hover {
+  background: #0d4c14;
 }
 .all-in-foot .ul {
   width: 314px;
